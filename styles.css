@@ -164,6 +164,8 @@ button, a.button{
 }
 
 #slide1 .containerslide .right{
+    background-size: 142%;
+    background-position-x: -90px;
     background-image: url(images/ventanal.jpg);
 }
 
@@ -177,6 +179,7 @@ button, a.button{
 
 #slide4 .containerslide .right{
     background-image: url(images/carrito.jpg);
+    background-position-y: -210px;
 }
 
 #slide5 .containerslide .right{
@@ -188,7 +191,9 @@ button, a.button{
 }
 
 #slide7 .containerslide .right{
+    background-size: 102%;
     background-image: url(images/arco_pasillo_xxl.jpg);
+    background-position-x: -10px;
 }
 
 #slide8 .containerslide .right{
@@ -204,11 +209,15 @@ button, a.button{
 }
 
 #slide11 .containerslide .right{
+    background-size: 171%;
+    background-position-x: -250px;
+    background-position-y: -175px;
     background-image: url(images/lacteos.jpg);
 }
 
 #slide12 .containerslide .right{
     background-image: url(images/piso_de_exhibicion.jpg);
+    background-position-y: -200px;
 }
 
 #slide13 .containerslide .right{
@@ -216,7 +225,10 @@ button, a.button{
 }
 
 #slide14 .containerslide .right{
+    background-size: 200%;
     background-image: url(images/stopper_xl.jpg);
+    background-position-x: -500px;
+    background-position-y: -180px;
 }
 
 #slide15 .containerslide .right{
