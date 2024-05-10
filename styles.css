@@ -8,6 +8,10 @@ body, html {
     font-family: 'Poppins-Regular';
 }
 
+.righttop{
+    display:none;
+}
+
 .home-container{
     width: 60vw;
     height: 100vh;
