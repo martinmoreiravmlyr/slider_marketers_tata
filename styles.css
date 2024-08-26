@@ -179,6 +179,11 @@ button, a.button{
     width: 60%;
 }
 
+.righttop{
+    display: none;
+}
+
+
 .containerslide .right{
     height: 100%;
     border-radius: 0px 50px 50px 0;
