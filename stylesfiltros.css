@@ -27,20 +27,8 @@ body, html {
     font-size: 1.7em;
 }
 
-#botonerainicial{
-    display: flex;
-}
-
 #botonerainicial a.button{
-    width: 49%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button, a.button{
     text-transform: uppercase!important;
-    font-size: 16px!important;
 }
 
 .step {
@@ -61,6 +49,16 @@ h1{
 
 h1 strong{
     font-family: 'Poppins-Bold';
+}
+
+h1.tituloslider{
+    color: #ffffff !important;
+    padding: 10px 0 0 0;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    top: 4%;
 }
 
 .slider h1{
@@ -130,21 +128,21 @@ button, a.button{
 }
 
 .slide {
-    width: 60vw; 
-    min-width: 60vw; 
+    width: 60vw;
+    min-width: 60vw;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.5s ease, opacity 0.5s ease;
-    margin-right: 5px; 
+    margin-right: 5px;
     transform: scale(0.8);
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
 .slide.active {
-    transform: scale(1)!important;
-    opacity: 1!important;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .slides {
@@ -257,12 +255,6 @@ button, a.button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-
-#botonerainicial  a.button {
-    padding: 20px;
-    font-size: 16px!important;
 }
 
 button, a.button {

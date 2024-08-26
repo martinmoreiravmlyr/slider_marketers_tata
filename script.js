@@ -1,8 +1,8 @@
 function moveSlide(slideNumber) {
     const slides = document.querySelectorAll('.slide');
     const slider = document.querySelector('.slides');
-    const buttons = document.querySelectorAll('button'); // Seleccionar todos los botones
-    const slideWidth = slides[0].offsetWidth + 5; // Ancho de un slide inactivo más el margen
+    const buttons = document.querySelectorAll('button'); 
+    const slideWidth = slides[0].offsetWidth + 5; 
 
     let offset;
     if (slideNumber === 1) {
@@ -20,7 +20,6 @@ function moveSlide(slideNumber) {
         }
     });
 
-    // Remover la clase 'active-button' de todos los botones y añadirla solo al botón activo
     buttons.forEach((button, index) => {
         button.classList.remove('active-button');
         if (index === slideNumber - 1) {

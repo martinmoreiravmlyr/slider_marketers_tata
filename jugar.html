@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="header">
+        <a href="index.html"><img id="imago_img" src="images/imago.png"></a>
+    </div>
+
+    <div class="home-container">
+
+        <div id="step1" class="step active">
+            <h1>Elegí la categoría de tu producto</h1>
+            <div>
+                <button class="btn" onclick="selectCategory('Alimentos y bebidas')">Alimentos y bebidas</button>
+                <button class="btn" onclick="selectCategory('Electrónicos')">Electrónicos</button>
+                <button class="btn" onclick="selectCategory('Ropa y accesorios')">Ropa y accesorios</button>
+                <button class="btn" onclick="selectCategory('Productos de belleza y cuidado personal')">Productos de belleza y cuidado personal</button>
+                <button class="btn" onclick="selectCategory('Muebles y decoración del hogar')">Muebles y decoración del hogar</button>
+                <button class="btn" onclick="selectCategory('Juguetes y juegos')">Juguetes y juegos</button>
+                <button class="btn" onclick="selectCategory('Servicios financieros')">Servicios financieros</button>
+                <button class="btn" onclick="selectCategory('Automóviles y vehículos')">Automóviles y vehículos</button>
+                <button class="btn" onclick="selectCategory('Viajes y Experiencias')">Viajes y Experiencias</button>
+                <button class="btn" onclick="selectCategory('Salud y bienestar')">Salud y bienestar</button>
+                <button class="btn" onclick="selectCategory('Otros')">Otros</button>
+            </div>
+        </div>
+
+        <div id="step2" class="step">
+            <h1>Selecciona un Producto</h1>
+            <div id="products"></div>
+        </div>
+
+    </div>
+
+    <script>
+        const options = {
+            "Alimentos y bebidas": ["Awareness", "Engagement", "Conversión"],
+            "Electrónicos": ["Awareness", "Engagement", "Conversión"],
+            "Ropa y accesorios": ["Awareness", "Engagement", "Conversión"],
+            "Productos de belleza y cuidado personal": ["Awareness", "Engagement", "Conversión"],
+            "Muebles y decoración del hogar": ["Awareness", "Engagement", "Conversión"],
+            "Juguetes y juegos": ["Awareness", "Engagement", "Conversión"],
+            "Servicios financieros": ["Awareness", "Engagement", "Conversión"],
+            "Automóviles y vehículos":["Awareness", "Engagement", "Conversión"],
+            "Viajes y Experiencias": ["Awareness", "Engagement", "Conversión"],
+            "Salud y bienestar": ["Awareness", "Engagement", "Conversión"],
+            "Otros": ["Awareness", "Engagement", "Conversión"]
+        };
+
+        function selectCategory(category) {
+            const productsDiv = document.getElementById('products');
+            productsDiv.innerHTML = ''; 
+
+            if (category && options[category]) {
+                options[category].forEach(function(product) {
+                    const button = document.createElement('button');
+                    button.className = 'btn';
+                    button.textContent = product;
+                    button.onclick = function() {
+                        localStorage.setItem('selectedProduct', product); 
+                        window.location.href = 'sliderconfiltros.html'; 
+                    };
+                    productsDiv.appendChild(button);
+                });
+
+                document.getElementById('step1').classList.remove('active');
+                document.getElementById('step2').classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>
