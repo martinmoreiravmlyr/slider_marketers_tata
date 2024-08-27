@@ -61,10 +61,15 @@ h1.tituloslider{
     top: 4%;
 }
 
+h2{
+    line-height: 1.1em;
+}
+
 .slider h1{
     color: #575756;
     font-size: 3em!important;
     line-height: 1em;
+    margin-bottom: 20px;
 }
 
 h3{
